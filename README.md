@@ -30,41 +30,6 @@ images, and streaming camera/video input for testing and deployment.
 
 ------------------------------------------------------------------------
 
-## 📂 Package Structure
-
-    YOLO-DetectionROS2/
-    ├── yolov5_detector_node.py   # ROS2 node for YOLOv5 detection
-    ├── yolov12_detector_node.py  # ROS2 node for YOLOv12 detection
-    ├── image_publisher_node.py   # Simple ROS2 image publisher (webcam/video)
-    └── weights/                  # Place YOLOv5/YOLOv12 model weights here (bestv5.pt, bestv12.pt)
-
-------------------------------------------------------------------------
-
-## ⚙️ Installation
-
-1.  Clone the repository into your ROS2 workspace (`src` folder):
-
-    ``` bash
-    cd ~/ros2_ws/src
-    git clone https://github.com/your-username/YOLO-DetectionROS2.git
-    ```
-
-2.  Install Python dependencies:
-
-    ``` bash
-    pip install ultralytics opencv-python torch torchvision
-    ```
-
-3.  Build the workspace:
-
-    ``` bash
-    cd ~/ros2_ws
-    colcon build
-    source install/setup.bash
-    ```
-
-------------------------------------------------------------------------
-
 ## ▶️ Usage
 
 ### Run YOLOv5 Detector
@@ -115,13 +80,6 @@ Each detector node supports configurable parameters:
 -   Surveillance and monitoring systems
 -   Real-time object recognition for research
 
-------------------------------------------------------------------------
-
-## 🏷 Keywords
-
-ros2, ros2-nodes, ros2-perception, computer-vision, object-detection,
-yolov5, yolov12, deep-learning, realtime-detection, opencv, cv-bridge,
-ultralytics, robotics
 
 ------------------------------------------------------------------------
 
